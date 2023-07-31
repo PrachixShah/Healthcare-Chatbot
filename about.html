@@ -5,82 +5,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
 <!-- Navigation -->
 <div class="navbar">
-  <nav>
+  <div class="container">
+    <h1 class="logo"></h1>
     <ul>
       <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="about.html" class="active">ABOUT</a></li>
       <li><a href="chat.html">CHAT</a></li>
       <li><a href="ethics.html">ETHICS</a></li>
     </ul>
-  </nav>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fas fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-    <h4>WE ACCELERATE - MICROSOFT STREAM</h4>
-    <h1 class="w3-xxxlarge w3-animate-bottom">TEAM 319</h1>
-  </div>
-</header>
-<br>
-
-<div class="w3-row-padding w3-center w3-margin-top">
-
-<div class="w3-half">
-  <div class="w3-card w3-container" style="min-height:460px">
-    <h3>Prachi Shah</h3><br>
-    <i class="fas fa-laptop-code w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <p>B.A.Sc Nanotechnology Engineering</p>
-    <p>Key Role: Front-end Development</p>
-    <a href="https://www.linkedin.com/in/prachixshah/" class="w3-bar-item w3-button">Prachi's LinkedIn</a>
   </div>
 </div>
 
-<div class="w3-half">
-  <div class="w3-card w3-container" style="min-height:460px">
-    <h3>Jeevsidiak Singh</h3><br>
-    <i class="fas fa-code w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <p>Bachelor of Computer Science</p>
-    <p>Key Role: Backend Development</p>
-    <a href="#" class="w3-bar-item w3-button">Jeevsidiak's LinkedIn</a>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Meet the Team</h1>
   </div>
-</div>
+</section>
 
-<div class="w3-half">
-  <div class="w3-card w3-container" style="min-height:460px">
-    <h3>Jerry Wu</h3><br>
-    <i class="fas fa-microchip w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <p>B.A.Sc Computer Engineering</p>
-    <p>Key Role: Backend Development</p>
-    <a href="#" class="w3-bar-item w3-button">Jerry's LinkedIn</a>
+<!-- Team Members Section -->
+<section class="team-members">
+  <div class="container">
+    <div class="team-card">
+      <img src="images/image1.webp" alt="Member 1">
+      <h2>Prachi Shah</h2>
+      <p>B.A.Sc, Nanotechnology Engineering</p>
+      <p>Role: Front-end Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="images/image3.jpg" alt="Member 2">
+      <h2>Jeevsidiak Singh</h2>
+      <p>Bachelor of Computer Science</p>
+      <p>Role: Back-end Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="images/image2.png" alt="Member 3">
+      <h2>Jerry Wu</h2>
+      <p>B.A.Sc, Computer Engineering</p>
+      <p>Role: Back-end Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="images/image4.jpg" alt="Member 4">
+      <h2>Abigail</h2>
+      <p>B.A Legal Studies</p>
+      <p>Role: Research Lead</p>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="w3-half">
-  <div class="w3-card w3-container" style="min-height:460px">
-    <h3>Design</h3><br>
-    <i class="fas fa-palette w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <p>B.A Legal Studies</p>
-    <p>Key Role: Research Lead</p>
-    <a href="#" class="w3-bar-item w3-button">Abigail's LinkedIn</a>
+<!-- Contact Section -->
+<section class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
-</div>
+</section>
 
-</div>
-
-<hr>
-
-<!-- Footer -->
-<footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>We'd Love to Hear from You!</h3>
-  <p>Reach out to us by: <a href="mailto:prachi.shah@uwaterloo.ca" target="_blank">Email</a></p>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2023 TEAM 319 - WE ACCELERATE. All rights reserved.</p>
 </footer>
 
 </body>

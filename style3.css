@@ -1,77 +1,164 @@
-/* ... Previous CSS code ... */
+/* styles.css */
 
-/* Blog entry styling */
-.w3-card-4 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    background-color: #f2f2f2;
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
     color: #333;
-    margin-bottom: 20px;
-}
- 
-.w3-card-4 img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
+  }
   
-.w3-container h3 {
-    font-size: 24px;
-}
-  
-.w3-container h5 {
-    font-size: 14px;
-    color: #888;
-}
-  
-  .w3-container p {
-    font-size: 14px;
-}
-  
-  /* Button styling */
-.w3-button {
-    border: none;
-    outline: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: #333;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-  
-.w3-button:hover {
-    background-color: #444;
-}
-  
-  /* Badge styling */
-.w3-badge {
-    background-color: #333;
+  /* Navigation */
+  .navbar {
+    background-color: #222;
     color: #fff;
-    padding: 4px 8px;
-    border-radius: 50%;
-    font-size: 12px;
-}
+    padding: 10px 0;
+  }
   
-
-.w3-row-content {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+  }
   
-.w3-col-blog {
-    flex: 0 0 75%;
-    max-width: 75%;
-}
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
   
-.w3-col-sidebar {
-    flex: 0 0 24%;
-    max-width: 24%;
-}
-    
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  ul li:first-child {
+    margin-left: 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  ul li a.active {
+    color: #ff6600;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    color: #222;
+  }
+  
+  /* Team Members Section */
+  .team-members {
+    padding: 40px 0;
+  }
+  
+  .team-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .team-card h2 {
+    font-size: 24px;
+    color: #222;
+  }
+  
+  .team-card p {
+    color: #666;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e66000;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  

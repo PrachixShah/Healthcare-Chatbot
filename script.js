@@ -19,9 +19,9 @@ function appendMessage(sender, message) {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-function sendMessageToBot(message) {
-  // Simulate bot response (replace with actual bot API call or processing logic)
-  setTimeout(() => {
-    appendMessage('bot', `Bot says: Thanks for your message "${message}"`);
-  }, 500);
+const sendMessageToBot = async (message) => {
+  const response = await fetch('http://localhost:8000/gpt?query='+ message.replaceAll(" ", "_"))
+  const responseJSON = await response.json()
+  appendMessage('bot', responseJSON)
+  console.log(responseJSON)
 }
