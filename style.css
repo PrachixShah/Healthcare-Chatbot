@@ -1,0 +1,143 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg); 
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    margin-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    align-self: auto;
+}
+
+.col{
+    flex-basis: 46%;
+    display: flex;
+    flex-direction:column; /* Stack elements vertically */
+    justify-content: center; /* Center-align the elements */
+    align-items: flex-start; /* Align the "Welcome" part to the left */
+    margin-top: 40px; /* Add margin between navbar and cards */
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button{
+    width: 180px;
+    columns: #fff;
+    font-size: 12px;
+    padding: 12px 0px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* Chatbot cards styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements when needed */
+    justify-content: space-between; /* Create a space between cards */
+    margin-top: 40px; /* Add margin between "Welcome" and the cards */
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 2% 3%;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.c1{
+    background-image: url(images/pic1.jpg);
+}
+
+.c2{
+    background-image: url(images/card\ 2.jpg);
+}
+
+.c3 {
+    background-image: url(images/team1.jpg);
+}
+
+.c4 {
+    background-image: url(images/contact.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    align-items: center;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+}

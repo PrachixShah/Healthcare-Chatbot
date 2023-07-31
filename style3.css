@@ -1,0 +1,77 @@
+/* ... Previous CSS code ... */
+
+/* Blog entry styling */
+.w3-card-4 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #f2f2f2;
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
+.w3-card-4 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+  
+.w3-container h3 {
+    font-size: 24px;
+}
+  
+.w3-container h5 {
+    font-size: 14px;
+    color: #888;
+}
+  
+  .w3-container p {
+    font-size: 14px;
+}
+  
+  /* Button styling */
+.w3-button {
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: #333;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+  
+.w3-button:hover {
+    background-color: #444;
+}
+  
+  /* Badge styling */
+.w3-badge {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+  
+
+.w3-row-content {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.w3-col-blog {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+  
+.w3-col-sidebar {
+    flex: 0 0 24%;
+    max-width: 24%;
+}
+    
